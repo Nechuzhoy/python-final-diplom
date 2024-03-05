@@ -14,7 +14,7 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # активация пользователя
 # response = requests.post(
 #     'http://127.0.0.1:8000/api/v1/user/register/confirm',
@@ -23,7 +23,7 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # получение токена
 # response = requests.post(
 #     'http://127.0.0.1:8000/api/v1/user/login',
@@ -32,7 +32,7 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # создать контакт!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # response = requests.post(
 #     'http://127.0.0.1:8000/api/v1/user/contact/',
@@ -50,8 +50,8 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # получение данных контакт
 # response = requests.get(
 #            'http://127.0.0.1:8000/api/v1/user/contact',
@@ -60,7 +60,7 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # редактирование данных контакт
 # response = requests.put('http://127.0.0.1:8000/api/v1/user/contact/1/',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -78,7 +78,7 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # удаление контакт
 # response = requests.delete('http://127.0.0.1:8000/api/v1/user/contact/1/',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"}
@@ -86,8 +86,8 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # обновить прайс
 # response = requests.post('http://127.0.0.1:8000/api/v1/partner/update',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -98,8 +98,8 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # получить статус партнера
 # response = requests.get('http://127.0.0.1:8000/api/v1/partner/state',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -110,8 +110,8 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # получить заказы
 # response = requests.get('http://127.0.0.1:8000/api/v1/partner/orders',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -122,8 +122,8 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # обновить статус партнера
 # response = requests.post('http://127.0.0.1:8000/api/v1/partner/update',
 #     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -134,29 +134,29 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # список магазинов
 # response = requests.get('http://127.0.0.1:8000/api/v1/shops',)
 #   headers = {"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
 #
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # просмотр категорий товара
 # response = requests.get('http://127.0.0.1:8000/api/v1/categories')
 #    headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
 # print(response.status_code)
 # print(response.json())
-
-
+#
+#
 # просмотр товара
 # response = requests.get('http://127.0.0.1:8000/api/v1/products')
 #    headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
 # print(response.status_code)
 # print(response.json())
-
+#
 # добавление товара в корзину
 # response = requests.post('http://127.0.0.1:8000/api/v1/basket',
 #                          headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -166,9 +166,9 @@ import requests
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # изменение количества товара в корзине
-
+#
 # response = requests.put('http://127.0.0.1:8000/api/v1/basket',
 #  headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
 #                         json={'items':
@@ -177,7 +177,7 @@ import requests
 #                         )
 # print(response.status_code)
 # print(response.json())
-
+#
 # удаление товара из корзины
 # response = requests.delete('http://127.0.0.1:8000/api/v1/basket',
 #  headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
@@ -187,24 +187,24 @@ import requests
 #                         )
 # print(response.status_code)
 # print(response.json())
-
+#
 # содержание корзина
 # response = requests.get('http://127.0.0.1:8000/api/v1/basket',
 #  headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"})
 #
 # print(response.status_code)
 # print(response.json())
-
+#
 # оформление заказа
 # response = requests.post('http://127.0.0.1:8000/api/v1/order',
 #                     headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"},
 #                     json={"id": "1", "contact":"1"})
 # print(response.status_code)
 # print(response.json())
-
-
-
-
+#
+#
+#
+#
 # просмотр заказов
 # response = requests.get('http://127.0.0.1:8000/api/v1/order',
 #         headers={"Authorization": "Token e47ee35d74a616c45347d9a08cd92ba10071b1ea"})

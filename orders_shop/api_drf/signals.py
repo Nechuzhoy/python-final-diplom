@@ -45,8 +45,6 @@ def create_user_signal(sender: Type[User], instance: User, created: bool, **kwar
     new_user_registered_signal_tasks(instance)
 
 
-
-
 @receiver(new_order)
 def create_new_order_signal(user_id, **kwargs):
     new_order_signal_tasks(user_id, **kwargs)

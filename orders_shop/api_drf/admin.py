@@ -24,9 +24,7 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(Shop)
 class ShopAdmin(admin.ModelAdmin):
-    #list_display = ('name',)
     pass
-
 
 
 @admin.register(Category)

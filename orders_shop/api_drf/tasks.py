@@ -4,8 +4,9 @@ from django.core.mail import EmailMultiAlternatives
 
 from orders_shop.celery import app as celery_app
 
+
 @celery_app.task
-def new_user_registered_signal_tasks(instance:User):
+def new_user_registered_signal_tasks(instance: User):
     """
      отправляем письмо с подтрердждением почты
 
@@ -25,7 +26,6 @@ def new_user_registered_signal_tasks(instance:User):
         [instance.email]
     )
     msg.send()
-
 
 
 def new_order_signal_tasks(user_id, **kwargs):
