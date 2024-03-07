@@ -30,8 +30,20 @@
 ## **Проверить работу модулей**
     
     
-    python3 manage.py runserver 0.0.0.0:8000
-    
+    python3 manage.py runserver 127.0.0.1:8000
+
+## Вариант 2
+# запуск базы данных
+   docker-compose up -d pgdb
+# проверка запуска базы данных
+   docker ps -a
+# создать образ на основе Dockerfile
+   docker compose build
+# запуск приложения 
+   docker compose up
+
+
+
 # Точки входа API сервиса
 
 # Пример API Сервиса для магазина

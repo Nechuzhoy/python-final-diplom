@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  django:
+    container_name: orders_shop
+    # сборка образа
+    build: .
+    # открытие порта
+    ports:
+      - 8000:8000
+    # зависимость от сервисов
+    depends_on:
+      - pgdb
+
+  pgdb:
+    # используем образ postgres
+    image: postgres:16.0-alpine
+    # название контейнера
+    container_name: pgdb
+    # задание переменных окружения для postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+     # имя контейнера для pgdb
+
+
+# сохранить данные за пределами контейнера
+volumes:
+  pgdata: {}
